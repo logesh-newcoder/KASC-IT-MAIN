@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    background-color: black;
+    overflow-x: hidden;
+}
+.head{
+    width: 100%;
+    height: 9rem;
+    min-height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    border-bottom: 2px solid brown;
+}
+.head .img{
+    position:absolute;
+    left: 5px;
+    height: 100%;
+    width: 100%;
+    padding: px;
+    display: flex;
+    align-items: center;
+}
+.head img{
+    height: 90%;
+}
+.head nav{
+    position: absolute;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+.head nav span a{
+    margin: 0rem 2rem;
+    padding: 1.4rem;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    transition: color,background-color 0.7s linear;
+}
+.head nav span a:hover{
+    background-color: white;
+    color: black;
+}
+.list{
+    width: 100%;
+    position: relative;
+}
+#child{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    z-index: 1;
+}
+#child a{
+    text-decoration: none;
+    padding: 1rem;
+    color:white;
+}
+#child a:hover{
+    background-color: white;
+    color: black;
+}
+.list:hover #child{
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+
+/*--------------nav completed--------------*/
+
+/* section content*/
+section{
+    margin: 1rem;
+}
+section .a{
+    margin: 1rem;
+    text-indent: 100px;
+    font-size: 2rem;
+}
+section .b h2{
+    padding: 1rem;
+    color: gold;
+    font-size: 2.3rem;
+}
+.b1 .c{
+    padding-bottom: 1rem;
+}
+.b1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    padding-left: 2.5rem;
+}
+.b1 .c1 a:hover{
+    color: rgb(221, 221, 22);
+}
+.b1 .c2 a:hover{
+    color: rgb(30, 30, 212);
+}
+.b1 .c3 a:hover{
+    color: rgb(207, 30, 30);
+}
+
+/*------------1150px-----------*/
+@media screen and (max-width:1150px) {
+    .head{
+        height: 8rem;
+        min-height: 13%;
+    }
+    .head nav span a{
+        margin: 0rem 1.5rem;
+        padding: 0.8rem;
+        font-size: 1.7rem;
+    }
+    #child a{
+        padding: 0.8rem;
+    }    
+    /* section content*/
+    section{
+        margin: 1rem;
+    }
+    section .a{
+        margin: 1rem;
+        text-indent: 100px;
+        font-size: 1.7rem;
+    }
+    section .b h2{
+        padding: 1rem;
+        color: gold;
+        font-size: 2rem;
+    }
+    .b1 .c{
+        padding-bottom: 1rem;
+    }
+    .b1 a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.7rem;
+        padding-left: 2.5rem;
+    }
+}
+/*------------860px-----------*/
+@media screen and (max-width:860px) {
+    .head{
+        height: 7rem;
+        min-height: 11%;
+    }    
+    .head nav{
+        right: 0.5rem;
+    }
+    .head nav span a{
+        margin: 0rem 0.5rem;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+    #child a{
+        padding: 0.5rem;
+    }
+    /* section content*/
+     section{
+         margin: 0.7rem;
+     }
+     section .a{
+         margin: 0.7rem;
+         text-indent: 70px;
+         font-size: 1.3rem;
+     }
+     section .b h2{
+         padding: 1rem;
+         font-size: 1.6rem;
+     }
+     .b1 .c{
+         padding-bottom: 0.7rem;
+     }
+     .b1 a{
+         font-size: 1.5rem;
+         padding-left: 1.5rem;
+     }
+}
+
+/*--------------nav completed--------------*/
+
+/*------------460px-----------*/
+@media screen and (max-width:460px) {
+    .head{
+        height: 5rem;
+        min-height: 10%;
+    }
+    .head nav{
+        position:absolute;
+        right: 0;
+    }    
+    .head nav span a{
+        margin: 0rem 0.2rem;
+        padding: 0.1rem;
+        font-size: 0.7rem;
+    }
+    #child a{
+        padding: 0.1rem;
+    }    
+    /* section content*/
+     section{
+         margin: 1rem;
+     }
+     section .a{
+         margin: 0.8rem;
+         text-indent: 65px;
+         font-size: 0.8rem;
+     }
+     section .b h2{
+         padding: 0.6rem;
+         font-size: 1rem;
+     }
+     .b1 .c{
+         padding-bottom: 0.6rem;
+     }
+     .b1 a{
+         font-size: 0.8rem;
+         padding-left: 1rem;
+     }
+}
+
+/*--------------nav completed--------------*/
